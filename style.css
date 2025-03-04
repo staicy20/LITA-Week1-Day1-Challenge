@@ -1,0 +1,54 @@
+/* Full-page black background and centering */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+/* Center content with consistent width */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;  /* Ensures text and image align */
+    margin: 0 auto;  /* Centers everything */
+}
+
+/* Heading style */
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Paragraph style */
+p {
+    font-size: 18px;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+/* Center image, keep proportions, and add border */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  /* Makes sure the image fits within the container */
+    max-width: 800px;  /* Controls image width */
+}
+
+img {
+    width: 100%;  /* Ensures it scales properly */
+    height: auto;
+    display: block;
+    border: 5px solid white;
+    border-radius: 5px; /* Slightly smooth corners */
+}
+
